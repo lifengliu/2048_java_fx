@@ -19,9 +19,8 @@ public class App extends Application
 
 	@Override
 	public void start(Stage primaryStage) throws Exception {
-		Label hello=new Label("Hello world");
-		Pane pane=new Pane();
-		pane.getChildren().add(hello);
+		GamePane pane=new GamePane();
+
 		Scene scene=new Scene(pane,300,300);
 		primaryStage.setTitle("2048 in java FX");
 		primaryStage.setScene(scene);

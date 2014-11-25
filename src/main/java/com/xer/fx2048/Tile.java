@@ -60,10 +60,10 @@ public class Tile {
 			text.setX(x+TILEWIDTH/2.0-layoutWidth/2.0);
 			text.setY(y+TILEHEIGHT/2.0+layoutHeight/2.0-5);
 		}
-		//else
-		//{
-		//	text.setText(".");
-		//}
+		else
+		{
+			text.setText("");
+		}
 	}
 	/**
 	*Destroy the figure

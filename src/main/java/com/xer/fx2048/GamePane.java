@@ -28,7 +28,7 @@ public class GamePane extends Pane{
 				this.tiles[i][j]=new Tile(this,x,y);
 			}
 		}
-		this.core=new Core(size,size);
+		this.core=new Core(size);
 		update();
 	}
 	private void update()
@@ -37,8 +37,28 @@ public class GamePane extends Pane{
 		{
 			for(int j=0;j<size;j++)
 			{
-				tiles[i][j].setValue(core.getBoard()[i][j ]);
+				tiles[i][j].setValue(core.getBoard()[i][j]);
 			}
 		}
+	}
+	public void slideUp()
+	{
+		boolean success=core.slideUp();
+		update();
+	}
+	public void slideDown()
+	{
+		boolean success=core.slideDown();
+		update();
+	}
+	public void slideRight()
+	{
+		boolean success=core.slideRight();
+		update();
+	}
+	public void slideLeft()
+	{
+		boolean success=core.slideLeft();
+		update();
 	}
 }

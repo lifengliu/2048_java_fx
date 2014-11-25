@@ -52,7 +52,7 @@ public class Tile {
 		color=getColor(value);
 		rect.setFill(color);
 		rect.setStroke(color);
-		//if(value!=0)
+		if(value!=0)
 		{
 			text.setText(""+value);
 			double layoutWidth=text.getLayoutBounds().getWidth();

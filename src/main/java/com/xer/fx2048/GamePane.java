@@ -14,21 +14,30 @@ import javafx.scene.layout.Pane;
 public class GamePane extends Pane{
 	final private static int size=4;	
 	private Tile [][] tiles;
+	private Core core;
 
 	public GamePane()
 	{
-		int count;
 		this.tiles=new Tile[size][size];
-		count=2;
-		for(int i=0;i<size;i++)//columns
+		for(int i=0;i<size;i++)
 		{
-			for(int j=0;j<size;j++)//rows
+			for(int j=0;j<size;j++)
 			{
 				int x=i*Tile.TILEWIDTH;
 				int y=j*Tile.TILEHEIGHT;
-				tiles[i][j]=new Tile(this,x,y);
-				tiles[i][j].setValue(count);
-				count=count*2;	
+				this.tiles[i][j]=new Tile(this,x,y);
+			}
+		}
+		this.core=new Core(size,size);
+		update();
+	}
+	private void update()
+	{
+		for(int i=0;i<size;i++)
+		{
+			for(int j=0;j<size;j++)
+			{
+				tiles[i][j].setValue(core.getBoard()[i][j ]);
 			}
 		}
 	}

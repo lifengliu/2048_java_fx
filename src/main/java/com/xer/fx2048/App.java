@@ -25,5 +25,6 @@ public class App extends Application
 		primaryStage.setTitle("2048 in java FX");
 		primaryStage.setScene(scene);
 		primaryStage.show();
+		pane.requestFocus();
 	}
 }

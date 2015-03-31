@@ -11,7 +11,7 @@ import javafx.scene.text.Text;
 
 /**
  *
- * @author xer
+ * @author lifeng liu 
  */
 public class Tile {
 	private int x;

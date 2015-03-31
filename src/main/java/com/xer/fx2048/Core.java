@@ -1,13 +1,11 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * The core logic of 2048
  */
 package com.xer.fx2048;
 
 /**
  *
- * @author xer
+ * @author lifeng liu 
  */
 public class Core {
 	private int [][] board;

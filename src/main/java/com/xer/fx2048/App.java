@@ -8,7 +8,7 @@ import javafx.stage.Stage;
 import javafx.scene.input.KeyCode;
 
 /**
- * Hello world!
+ * 2048 based on java-fx
  *
  */
 public class App extends Application 
